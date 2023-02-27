@@ -50,7 +50,7 @@ const Sidebar = () => {
                 animate={{ x: 0 }}
                 exit={{ x: '100%' }}
                 transition={{ duration: 0.2, ease: 'easeInOut' }}
-                className="absolute right-0 top-0 bottom-0 flex w-[18rem] flex-col bg-gray-50"
+                className="absolute right-0 top-0 bottom-0 flex w-[18rem] flex-col border-l border-gray-300 bg-gray-50 shadow-sm"
               >
                 <div className="flex items-center border-b p-4">
                   <div className="text-sm font-medium text-gray-500">MENU</div>
@@ -67,7 +67,7 @@ const Sidebar = () => {
                       to="/"
                       className="my-1 w-full px-4 py-2 font-medium hover:bg-gray-100"
                     >
-                      HOME
+                      Home
                     </Link>
                   </li>
                   <li className="flex ">
@@ -75,7 +75,7 @@ const Sidebar = () => {
                       to="/about"
                       className="my-1 w-full px-4 py-2 font-medium hover:bg-gray-100"
                     >
-                      ABOUT
+                      About
                     </Link>
                   </li>
                   <li className="flex ">
@@ -83,17 +83,17 @@ const Sidebar = () => {
                       to="/learn"
                       className="my-1 w-full px-4 py-2 font-medium hover:bg-gray-100"
                     >
-                      LEARN
+                      Learn
                     </Link>
                   </li>
-                  <ul className="mt-2 flex justify-center gap-2 border-t py-4">
-                    <li className="flex ">
-                      <Link to="/login" className="btn btn--dark">
+                  <ul className="mt-2 flex flex-col gap-3 border-t py-6 px-4">
+                    <li className="flex flex-1 ">
+                      <Link to="/login" className="btn btn--dark w-full">
                         Sign Up
                       </Link>
                     </li>
-                    <li className="flex">
-                      <Link to="/login" className="btn btn--outline">
+                    <li className="flex flex-1">
+                      <Link to="/login" className="btn btn--outline w-full">
                         Log In
                       </Link>
                     </li>
