@@ -86,6 +86,18 @@ const Sidebar = () => {
                       LEARN
                     </Link>
                   </li>
+                  <ul className="mt-2 flex justify-center gap-2 border-t py-4">
+                    <li className="flex ">
+                      <Link to="/login" className="btn btn--dark">
+                        Sign Up
+                      </Link>
+                    </li>
+                    <li className="flex">
+                      <Link to="/login" className="btn btn--outline">
+                        Log In
+                      </Link>
+                    </li>
+                  </ul>
                 </ul>
               </motion.div>
             </div>
