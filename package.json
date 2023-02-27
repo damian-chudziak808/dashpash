@@ -1,0 +1,27 @@
+{
+  "name": "dashpash",
+  "version": "1.0.0",
+  "private": true,
+  "description": "superset of morse code tools",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damian-chudziak808/dashpash.git"
+  },
+  "author": "Damian Chudziak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damian-chudziak808/dashpash/issues"
+  },
+  "homepage": "https://github.com/damian-chudziak808/dashpash#readme",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.3"
+  }
+}
