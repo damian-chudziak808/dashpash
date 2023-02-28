@@ -28,6 +28,6 @@
     @apply bg-sky-400 text-white hover:bg-sky-300;
   }
   .btn--transparent {
-    @apply bg-transparent;
+    @apply bg-transparent hover:bg-transparent;
   }
 }

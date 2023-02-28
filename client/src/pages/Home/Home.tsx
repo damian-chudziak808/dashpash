@@ -1,9 +1,11 @@
-import { useSelector, useDispatch } from 'react-redux'
-import Sidebar from '~/components/Header/Sidebar'
+import Banner from './Banner'
 
 const Home = () => {
-  const dispatch = useDispatch()
-  return <div className="flex flex-1"></div>
+  return (
+    <div className="flex flex-1 flex-col">
+      <Banner />
+    </div>
+  )
 }
 
 export default Home
