@@ -1,5 +1,6 @@
 import { FaDiscord, FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { Button } from '~/components'
 
 const Banner = () => {
   return (
@@ -33,12 +34,12 @@ const Banner = () => {
             </a>
           </div>
           <div className="mb-8 flex gap-2">
-            <Link to="/register" className="btn--dark btn">
-              Make an account
-            </Link>
-            <Link to="/login" className="btn--outline btn">
-              Log In
-            </Link>
+            <Button theme="dark">
+              <Link to="/register">Make an account</Link>
+            </Button>
+            <Button theme="outline">
+              <Link to="/login">Log In</Link>
+            </Button>
           </div>
         </div>
         <div className="z-0 col-start-1 row-span-5 row-start-1 hidden w-full select-none justify-end opacity-20 blur-[2px] md:flex lg:opacity-100 lg:blur-0">

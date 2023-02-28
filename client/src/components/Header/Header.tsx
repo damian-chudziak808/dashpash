@@ -1,8 +1,9 @@
 import { NavLink, Link } from 'react-router-dom'
 import { RiMenuLine, RiHome2Line, RiQuestionMark, RiBook2Line } from 'react-icons/ri'
 import { useDispatch } from 'react-redux'
-import { sidebarSlice } from '~/features/sidebar/sidebarSlice'
 import Sidebar from '~/features/sidebar/Sidebar'
+import { sidebarSlice } from '~/features/sidebar/sidebarSlice'
+import { Button } from '~/components'
 
 const navlinks = [
   {
@@ -37,18 +38,15 @@ const Header = () => {
             ))}
           </div>
           <div className="ml-auto flex items-center gap-2">
-            <Link to="/login" className="btn--dark btn hidden md:flex">
-              Sign Up
-            </Link>
-            <Link to="/login" className="btn--outline btn hidden md:flex">
-              Log In
-            </Link>
-            <button
-              onClick={() => dispatch(sidebarSlice.actions.toggleSidebar())}
-              className="ml-2 flex items-center justify-center p-2 md:hidden"
-            >
+            <Button theme="dark">
+              <Link to="/login">Sign Up</Link>
+            </Button>
+            <Button theme="outline">
+              <Link to="/login">Log In</Link>
+            </Button>
+            <Button onClick={() => dispatch(sidebarSlice.actions.toggleSidebar())}>
               <RiMenuLine className="text-xl" />
-            </button>
+            </Button>
           </div>
         </div>
       </div>
